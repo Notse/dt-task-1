@@ -22,20 +22,20 @@ subthreadBtn.addEventListener('click', ()=> {
     console.log('clicked ', numb);
 })
 
-InterpretBtn.addEventListener('click', onAddInterpret);
+// InterpretBtn.addEventListener('click', onAddInterpret);
 
-function onAddInterpret() {
-    const subthreadEle = document.querySelector('.sub-thread');
-    const InterpretHtml = `
-    <div class="interpret">
-    <header class="interpret-header">
-        <h4>Interpret 1</h4>
-    </header>
-    <textarea class="interpret-content" placeholder="Enter Text Here"></textarea>
-    </div>`;
-    subthreadEle.innerHtml = subthreadEle.innerHTML + InterpretHtml; 
-    console.log(subthreadEle.innerHtml);
-}
+// function onAddInterpret() {
+//     const subthreadEle = document.querySelector('.sub-thread');
+//     const InterpretHtml = `
+//     <div class="interpret">
+//     <header class="interpret-header">
+//         <h4>Interpret 1</h4>
+//     </header>
+//     <textarea class="interpret-content" placeholder="Enter Text Here"></textarea>
+//     </div>`;
+//     subthreadEle.innerHtml = subthreadEle.innerHTML + InterpretHtml; 
+//     console.log(subthreadEle.innerHtml);
+// }
 
 function onDelete(ev) {
     numb = ev;
