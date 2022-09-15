@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@400;500&display=swap');
+
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
+    
 }
 
 html {
@@ -26,17 +32,20 @@ button {
     background: var(--white);
   }
 
+
 .sdlms-container {
     background-color: var(--white);
-    width: 40rem;
+    width: 36rem;
     margin: 0 auto;
     padding: 2rem;
     border: 0.1rem solid #ccc;
 }
 
 .session-info {
-    border: 0.5px solid #333333;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    border: 0.5px solid #8f8d8dc7;
+    width: 340px;
+    height: 110px;
+    filter: drop-shadow(0px 2px 2px rgba(193, 193, 193, 0.25));
     border-radius: 0px 0px 2px 2px;
     margin-bottom: 3.4rem;
     /* width: 70rem; */
@@ -53,18 +62,56 @@ button {
 
 .title {
     padding: 0.5rem 1rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    /* line-height: 32px; */
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.99);
 }
 
 .session-content {
-    font-size: 1.4rem;
-    margin: 1rem 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    
+    color: #000000;
+    /* margin: 1rem 0; */
 }
 
 .date , .time{
     display: block;
-    margin: .4rem 0;
-    font-size: 1.2rem;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    /* line-height: 23px; */
     text-transform: capitalize;
+    /* identical to box height, or 230% */
+    
+    
+    /* 1) Theme Color / Heading & Display - Text */
+    
+    color: #5E5873;
+}
+
+.session-text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 18px;
+    /* identical to box height, or 180% */
+    
+    
+    color: #000000;
+    
 }
 
 .info-bar {
@@ -86,32 +133,36 @@ button {
     padding: 0.2rem 0.6rem;
     background-color: var(--white);
     color: var(--light-grey);
-    /* border: 0.02rem solid #C1C1C1; */
     border-radius: 2px 2px 0px 0px;
-    /* font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600; */
-    font-size: 1.2rem;
     line-height: 16px;
     cursor: pointer;
-    /* overflow: scroll; */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
 }
 
 .tabs .active {
     background-color: var(--primary-color);
+    border: 0.2px solid #C1C1C1;
     color: var(--white);
 }
 
 .threadbuilder{
-    border: 0.02rem solid #C1C1C1;
-/* filter: drop-shadow(0px 2px 2px #000000); */ 
+    border: 0.02rem solid #c1c1c14f;
+    box-shadow: 0.1px 0.1px 2px rgba(0, 0, 0, 0.342);
     border-radius: 0px 2px 2px 2px;
     padding: .8rem 0;
 }
 
 .thread-header, .subthread-header, .summary-header , .interpret-header{
-    background: rgba(254, 255, 192, 0.2);
-    border: 0.2px solid rgba(0, 0, 0, 0.4);
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+border: 0.2px solid #3333331a;
+background: rgba(0, 0, 0, 0.05);
+filter: drop-shadow(0px 2px 2px rgba(193, 193, 193, 0.25));
     padding: 0.4rem  2rem;
     display: flex;
     justify-content: space-between;
@@ -133,7 +184,7 @@ button {
     resize: none;
     opacity: 0.5;
     background-color: var(--white);
-    border: 0.1px solid #333333;
+    border: 0.1px solid #33333330;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
     border-radius: 0px 0px 2px 2px;
     outline: none;
@@ -149,17 +200,30 @@ button {
     background: rgba(0, 41, 255, 0.02);
     border: 0.5px solid #0029FF;
     box-shadow: 0px 2px 2px rgba(193, 193, 193, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
     border-radius: 2px;
     color: var(--primary-color);
     padding: 0.4rem 0.5rem;
+    width: 67px;
+    height: 20px;
 }
 
 .thread-end {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    font-size: 1.2rem;
+    text-transform: capitalize;
 }
 
 .drop-down {
