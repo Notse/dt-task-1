@@ -32,8 +32,8 @@ document.addEventListener('click', (e) => {
     console.log(e.target.className.includes('chevron-up'));
     if(e.target.className.includes('chevron-up')){
         Threads.classList.toggle('hide');   
-             e.target.classList.toggle('rotate');
-             console.log(e);
+            e.target.classList.toggle('rotate');
+            console.log(e);
     }
 })
 
