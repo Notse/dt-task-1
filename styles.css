@@ -59,9 +59,10 @@ button {
 .slider{
     background-color: var(--white);
     position: absolute;
-    right: -50rem;
+    left: 130%;
+    top: 0%;
     transition: all 1s linear;
-    /* left:0; */
+    width: 100%;
 }
 
 .txt-al-r {
@@ -69,7 +70,7 @@ button {
 }
 
 .slide {
-    right: 0 !important;
+    left: 130% !important;
 }
 
 .bar-text{
